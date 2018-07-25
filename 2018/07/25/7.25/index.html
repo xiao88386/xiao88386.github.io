@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | 梦语人生</title>
+  <title>总结 | 梦语人生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="梦语人生">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="匿名函数">
+<meta name="keywords" content="函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="总结">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/7.25/index.html">
 <meta property="og:site_name" content="梦语人生">
+<meta property="og:description" content="匿名函数">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-25T13:00:06.814Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梦语人生">
+<meta name="twitter:title" content="总结">
+<meta name="twitter:description" content="匿名函数">
   
     <link rel="alternative" href="/atom.xml" title="梦语人生" type="application/atom+xml">
   
@@ -156,36 +161,65 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-7.25" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      总结
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/25/7.25/" class="archive-article-date">
+
+        
+        <a href="/2018/07/25/7.25/" class="archive-article-date">
   	<time datetime="2018-07-25T13:01:20.718Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/25/7.25/">总结</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><a id="more"></a>
+<h3 id="匿名函数-1"><a href="#匿名函数-1" class="headerlink" title="匿名函数"></a>匿名函数</h3><p>python 使用 lambda 来创建匿名函数。<br>lambda只是一个表达式，函数体比def简单很多。<br>lambda的主体是一个表达式，而不是一个代码块。仅仅能在lambda表达式中封装有限的逻辑进去。<br>lambda函数拥有自己的命名空间，且不能访问自有参数列表之外或全局命名空间里的参数。<br>虽然lambda函数看起来只能写一行，却不等同于C或C++的内联函数，后者的目的是调用小函数时不占用栈内存从而增加运行效率。<br>语法：<br>   lambda [arg1 [,arg2,…..argn]]:expression<br>优点<br>    书写简单，不需要def关键词<br>    不需要费脑子想函数名（匿名函数）<br>    看起来高大上<br>缺点<br>    lambda表达式功能受限，无法使用循环和功能分支<br>    复杂的操作，不适合lambda表达式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num=lambda a,b:min(a,b)</span><br><span class="line"><span class="built_in">print</span>(num(4,6))</span><br></pre></td></tr></table></figure>
+<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><p>定义在函数内部的变量拥有一个局部作用域，定义在函数外的拥有全局作用域。<br>局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。调用函数时，所有在函数内声明的变量名称都将被加入到作用域中。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line">total = 0; <span class="comment"># 这是一个全局变量</span></span><br><span class="line"><span class="comment"># 可写函数说明</span></span><br><span class="line">def sum( arg1, arg2 ):</span><br><span class="line">   <span class="comment">#返回2个参数的和."</span></span><br><span class="line">   total = arg1 + arg2; <span class="comment"># total在这里是局部变量.</span></span><br><span class="line">   <span class="built_in">print</span> <span class="string">"函数内是局部变量 : "</span>, total</span><br><span class="line">   <span class="built_in">return</span> total;</span><br><span class="line"><span class="comment">#调用sum函数</span></span><br><span class="line">sum( 10, 20 );</span><br><span class="line"><span class="built_in">print</span> <span class="string">"函数外是全局变量 : "</span>, total</span><br></pre></td></tr></table></figure>
+<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><p>一个类似递归的定义如下。<br>    def recursion():<br>        return recursion()<br>在使用递归时，需要注意以下几点：<br>递归就是在过程或函数里调用自身<br>必须有一个明确的递归结束条件，称为递归出口。<br>注意： 切勿忘记递归出口，避免函数无限调用。</p>
+<p>对一个数字列表（或者其他序列）求和，我们可以使用内置的sum函数</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; def mysum(L):</span><br><span class="line">	<span class="built_in">print</span>(L)</span><br><span class="line">	<span class="keyword">if</span> not L:</span><br><span class="line">		<span class="built_in">return</span> 0</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="built_in">return</span> L[0] + mysum(L[1:])</span><br><span class="line">&gt;&gt;&gt; mysum([1,2,3,4,5])</span><br><span class="line">[1,2,3,4,5]</span><br><span class="line">[2,3,4,5]</span><br><span class="line">[3,4,5]</span><br><span class="line">[4,5]</span><br><span class="line">[5]</span><br><span class="line">[]</span><br><span class="line">15</span><br></pre></td></tr></table></figure>
+<p>计算数n的阶乘。n的阶乘定义为n×(n –1)×(n –2)×…×1。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">一般循环</span><br><span class="line">def  factorial(n):</span><br><span class="line">	result = n	</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(1,n):</span><br><span class="line">		result *= i</span><br><span class="line">	<span class="built_in">return</span> result</span><br><span class="line"><span class="built_in">print</span>(factorial(5))</span><br><span class="line"></span><br><span class="line">def factorial(n):</span><br><span class="line">	<span class="keyword">if</span> n == 1:</span><br><span class="line">		<span class="built_in">return</span> 1</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="built_in">return</span> n * factorial(n-1)</span><br></pre></td></tr></table></figure></p>
+<p>优点：<br>递归使代码看起来更加整洁、优雅<br>可以用递归将复杂任务分解成更简单的子问题<br>使用递归比使用一些嵌套迭代更容易<br>缺点:<br>递归的逻辑很难调试、跟进<br>递归调用的代价高昂（效率低），因为占用了大量的内存和时间。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,122 +231,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/25/7.25/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/24/7.24/" class="archive-article-date">
-  	<time datetime="2018-07-24T06:18:40.879Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/24/7.24/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/24/7.24/">总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考试</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#匿名函数"><span class="toc-number">1.</span> <span class="toc-text">匿名函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#匿名函数-1"><span class="toc-number">1.1.</span> <span class="toc-text">匿名函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量作用域"><span class="toc-number">1.2.</span> <span class="toc-text">变量作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#递归函数"><span class="toc-number">1.3.</span> <span class="toc-text">递归函数</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/23/7.9总结/" class="archive-article-date">
-  	<time datetime="2018-07-23T13:09:30.994Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/23/7.9总结/">总结</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">函数</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-14T13:25:40.783Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -335,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
