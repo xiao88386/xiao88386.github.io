@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>总结 | 梦语人生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python 阶段测试题">
-<meta name="keywords" content="考试">
+  <meta name="description" content="I/O文件操作">
+<meta name="keywords" content="I&#x2F;O文件操作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="总结">
-<meta property="og:url" content="http://yoursite.com/2018/07/24/7.24/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/8.2/index.html">
 <meta property="og:site_name" content="梦语人生">
-<meta property="og:description" content="Python 阶段测试题">
+<meta property="og:description" content="I/O文件操作">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-24T06:17:40.317Z">
+<meta property="og:updated_time" content="2018-08-03T11:30:41.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="总结">
-<meta name="twitter:description" content="Python 阶段测试题">
+<meta name="twitter:description" content="I/O文件操作">
   
     <link rel="alternative" href="/atom.xml" title="梦语人生" type="application/atom+xml">
   
@@ -161,7 +161,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-7.24" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-8.2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -173,25 +173,17 @@
   
 
         
-        <a href="/2018/07/24/7.24/" class="archive-article-date">
-  	<time datetime="2018-07-24T06:18:40.879Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-24</time>
+        <a href="/2018/08/03/8.2/" class="archive-article-date">
+  	<time datetime="2018-08-03T11:31:37.685Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Python-阶段测试题"><a href="#Python-阶段测试题" class="headerlink" title="Python 阶段测试题"></a>Python 阶段测试题</h2><a id="more"></a>
-<h3 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Python 3.x语句 <span class="built_in">print</span>(1, 2, 3, sep=<span class="string">':'</span>) （间隔符）的输出结果为___1:2:3_________。</span><br></pre></td></tr></table></figure>
-<p>sep=’:’  最后输出没有’:’,end=’:’  最后输出有’:’</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">语句x = 3==3. 5执行结束后，变量x的值为__false___________。</span><br></pre></td></tr></table></figure>
-<p>优先级比较</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">假设有列表a = [<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'sex'</span>]和b = [<span class="string">'Dong'</span>, 38, <span class="string">'Male'</span>]，请使用一个语句将这两个列表的内容转换为字典，并且以列表a中的元素为“键”，以列表b中的元素为“值”，这个语句可以写为___________dis(zip(a,b))__________。(解压zip（*)）</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">已知 x = [3, 5, 7]，那么执行语句 x[1:] = [2]之后，x的值为___[3,2]_____________。</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">执行语句 x,y,z = map(str, range(3)) 之后，变量y的值为_____1______。</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">已知x = [1, 2, 3]，那么连续执行y = x和y.append(4)这两条语句之后，x的值为________[1,2,3,4]____________。</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">已知字典 x = &#123;i:str(i+3) <span class="keyword">for</span> i <span class="keyword">in</span> range(3)&#125;，那么表达式 <span class="string">''</span>.join([item[1] <span class="keyword">for</span> item <span class="keyword">in</span> x.items()]) 的值为_____’345’________。</span><br></pre></td></tr></table></figure>
-<h3 id="打印省、市、县三级菜单"><a href="#打印省、市、县三级菜单" class="headerlink" title="打印省、市、县三级菜单"></a>打印省、市、县三级菜单</h3><p>要求:<br>打印省、市、县三级菜单<br>可返回上一级<br>可随时退出程序<br><!-- more --><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">menu = &#123;</span><br><span class="line">    <span class="string">"河北省"</span>:&#123;</span><br><span class="line">        <span class="string">"石家庄"</span>:[<span class="string">"新华区"</span>,<span class="string">"桥西区桥东区"</span>,<span class="string">"长安区"</span>],</span><br><span class="line">        <span class="string">"唐山市"</span>:[<span class="string">"路北区"</span>,<span class="string">"路南区"</span>,<span class="string">"古冶区"</span>],</span><br><span class="line">        <span class="string">"秦皇岛市"</span>:[<span class="string">"海港区"</span>,<span class="string">"山海关区"</span>,<span class="string">"卢龙县"</span>]&#125;,</span><br><span class="line">    <span class="string">"江苏"</span>:&#123;</span><br><span class="line">        <span class="string">"南京市"</span>:[<span class="string">"玄武区"</span>,<span class="string">"下关区"</span>,<span class="string">"六合区"</span>,<span class="string">"溧水县"</span>],</span><br><span class="line">        <span class="string">"无锡市"</span>:[<span class="string">"崇安区"</span>,<span class="string">"北塘区"</span>,<span class="string">"南长区"</span>,<span class="string">"锡山区"</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">flag = True</span><br><span class="line">menu_list1 = list(menu.keys())</span><br><span class="line">address_list = []</span><br><span class="line"><span class="keyword">while</span> flag:</span><br><span class="line">    <span class="keyword">for</span> i,j <span class="keyword">in</span> enumerate(menu_list1,1):</span><br><span class="line">        <span class="built_in">print</span>(i,j)</span><br><span class="line">    address_input = input(<span class="string">"请输入要查询的编号,退出请按Q/q"</span>).strip()</span><br><span class="line">    <span class="keyword">if</span> address_input.isdigit():</span><br><span class="line">        address_input = int(address_input)</span><br><span class="line">        <span class="keyword">if</span> address_input &lt;= len(menu_list1):</span><br><span class="line">            <span class="keyword">while</span> flag:</span><br><span class="line">                addree_number1 = menu_list1[address_input-1]</span><br><span class="line">                menu_list2 = list(menu[addree_number1].keys())</span><br><span class="line">                <span class="keyword">for</span> k,l <span class="keyword">in</span> enumerate(menu_list2,1):</span><br><span class="line">                    <span class="built_in">print</span>(k,l)</span><br><span class="line">                address2_input = input(<span class="string">"请输入要查询的编号,返回请按B/b,退出请按Q/q"</span>).strip()</span><br><span class="line">                <span class="keyword">if</span> address2_input.isdigit():</span><br><span class="line">                    address2_input = int(address2_input)</span><br><span class="line">                    <span class="keyword">if</span> address2_input &lt;= len(menu_list2):</span><br><span class="line">                        <span class="keyword">while</span> flag:</span><br><span class="line">                            addree_number2 = menu_list2[address2_input-1]</span><br><span class="line">                            <span class="keyword">for</span> m,n <span class="keyword">in</span> enumerate(menu[addree_number1][addree_number2],1):</span><br><span class="line">                                <span class="built_in">print</span>(m,n)</span><br><span class="line">                            addree3_input = input(<span class="string">"返回请按B/b，退出请按Q/q"</span>)</span><br><span class="line">                            <span class="keyword">if</span> addree3_input.upper() == <span class="string">'B'</span>:</span><br><span class="line">                                <span class="built_in">break</span></span><br><span class="line">                            <span class="keyword">elif</span> addree3_input.upper() == <span class="string">'Q'</span>:</span><br><span class="line">                                flag = False</span><br><span class="line">                            <span class="keyword">else</span>:</span><br><span class="line">                                <span class="built_in">print</span>(<span class="string">"输入不合法"</span>)</span><br><span class="line">                    <span class="keyword">else</span>:<span class="built_in">print</span>(<span class="string">"输入编号超出范围"</span>)</span><br><span class="line">                <span class="keyword">elif</span> address2_input.upper() == <span class="string">'B'</span>:</span><br><span class="line">                    <span class="built_in">break</span></span><br><span class="line">                <span class="keyword">elif</span> address2_input.upper() == <span class="string">'Q'</span>:</span><br><span class="line">                    flag = False</span><br><span class="line">                <span class="keyword">else</span>:<span class="built_in">print</span>(<span class="string">"输入不合法"</span>)</span><br><span class="line">        <span class="keyword">else</span>:<span class="built_in">print</span>(<span class="string">"输入编号超出范围"</span>)</span><br><span class="line">    <span class="keyword">elif</span> address_input.upper() == <span class="string">'Q'</span>:</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>:<span class="built_in">print</span>(<span class="string">"输入不合法"</span>)</span><br></pre></td></tr></table></figure></p>
+        <h2 id="I-O文件操作"><a href="#I-O文件操作" class="headerlink" title="I/O文件操作"></a>I/O文件操作</h2><a id="more"></a>
+<h3 id="os模块文件操作函数"><a href="#os模块文件操作函数" class="headerlink" title="os模块文件操作函数"></a>os模块文件操作函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">函数	描述</span><br><span class="line">os.getcwd()	返回当前工作目录</span><br><span class="line">os.listdir(path)	返回path指定的文件夹包含的文件或文件夹的名字的列表</span><br><span class="line">os.mkdir(path)	创建一个名为path的文件夹,默认的权限是 0777 (八进制)，返回值为None</span><br><span class="line">os.makedirs(path)	递归创建文件夹</span><br><span class="line">os.rmdir(path)	删除文件夹（文件夹为空），返回值为None</span><br><span class="line">os.removedirs(path)	递归删除文件夹</span><br><span class="line">os.rename(oldn,newn)	修改文件和文件夹的名称</span><br><span class="line">os.stat(path)	获取path路径的信息</span><br><span class="line">``` </span><br><span class="line">os.path模块是os模块中的子模块，包含很多和路径相关的操作</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">函数	描述</span><br><span class="line">os.path.abspath()	获取相对路径转为绝对路径</span><br><span class="line">os.path.basename()	获取路径中的文件夹或者文件名称</span><br><span class="line">os.path.split()	将一个路径切割成文件夹和文件名部分</span><br><span class="line">os.path.splitext()	将一个文件名切割成名字和后缀两部分</span><br><span class="line">os.path.join(）	将路径和文件名拼接在一起</span><br><span class="line">os.path.getsize()	获取一个文件的大小 </span><br><span class="line">os.path.isdir()	检测目录是否为一个目录</span><br><span class="line">os.path.isfile()	检测目录是否为一个文件</span><br><span class="line">os.path.exists()	检测指定的路径是否存在</span><br><span class="line">os.path.getctime()	获取创建时间</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"><span class="comment">### 文件的重命名</span></span><br><span class="line"></span><br><span class="line">示例：当前目录存在文件名为test1.txt的文件，将其重新命名为mytest1.txt，若mytest1.txt已存在，则给出是否需要继续更名的提示。</span><br><span class="line">若不需要，则提示更名不成功，退出程序；</span><br><span class="line">若需要，则再次输入更名信息，检测新名是否已经存在，不存在则执行更名操作，输出更名成功提示信息，</span><br><span class="line">若文件已存在，则再次询问是否更名。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line"><span class="comment">#Exp7_19.py</span></span><br><span class="line">import os,os.path</span><br><span class="line">filename=<span class="string">'test1.txt'</span></span><br><span class="line">rename=<span class="string">'mytest1.txt'</span></span><br><span class="line">file_list=os.listdir(<span class="string">'.'</span>)       <span class="comment">#当前文件夹下</span></span><br><span class="line"><span class="built_in">print</span>(file_list)</span><br><span class="line"><span class="keyword">if</span> filename <span class="keyword">in</span> file_list:  <span class="comment">#判断需要重命名的文件是否存在</span></span><br><span class="line">    <span class="keyword">while</span>(rename <span class="keyword">in</span> file_list):		<span class="comment">#更名是否存在</span></span><br><span class="line">        choice=input(<span class="string">'有重命名，继续吗？（Y/N）：'</span>)</span><br><span class="line">        <span class="keyword">if</span> choice <span class="keyword">in</span> [<span class="string">'Y'</span>,<span class="string">'y'</span>]:</span><br><span class="line">            rename=input(<span class="string">'请重新输入更新文件名：'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="keyword">else</span>: 		<span class="comment">#更名不存在，则进行更名</span></span><br><span class="line">        os.rename(filename,rename)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'重命名成功'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'需要更名的文件不存在！'</span>)</span><br><span class="line"></span><br><span class="line">程序运行结果</span><br><span class="line">[<span class="string">'7-1.py'</span>, <span class="string">'F7_1.txt'</span>, <span class="string">'F7_14.dat'</span>, <span class="string">'F7_1_2.txt'</span>, <span class="string">'F7_2.txt'</span>, <span class="string">'F7_4.dat'</span>, <span class="string">'jp.py'</span>, <span class="string">'mytest1.txt'</span>, <span class="string">'ps.py'</span>, <span class="string">'README.txt'</span>, <span class="string">'test1.txt'</span>, <span class="string">'test7-1.txt'</span>, <span class="string">'test7-2.txt'</span>, <span class="string">'Untitled 1'</span>, <span class="string">'__pycache__'</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="文件压缩"><a href="#文件压缩" class="headerlink" title="文件压缩"></a>文件压缩</h3><p>文件压缩的格式有两种：zip压缩和tar压缩<br>zip压缩<br>    import zipfile<br>    f=zipfile.ZipFile(路经, mode=”r”, compression=ZIP_STORED, allowZip64=False)<br>    创建一个zip文件对象，压缩是需要把mode改为‘w’，a为追加压缩，不会清空原来的zip<br>解压缩<br>    f.extract(directory)和f.exractall(directory)</p>
 
       
 
@@ -226,7 +218,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">考试</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">I/O文件操作</a>
         		</li>
       		
 		</ul>
@@ -282,7 +274,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/24/7.24/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/8.2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -296,17 +288,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/25/7.25/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          总结
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/07/23/7.9总结/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/08/03/8.1/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">总结</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -334,7 +317,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Python-阶段测试题"><span class="toc-number">1.</span> <span class="toc-text">Python 阶段测试题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#填空题"><span class="toc-number">1.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打印省、市、县三级菜单"><span class="toc-number">1.2.</span> <span class="toc-text">打印省、市、县三级菜单</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-O文件操作"><span class="toc-number">1.</span> <span class="toc-text">I/O文件操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#os模块文件操作函数"><span class="toc-number">1.1.</span> <span class="toc-text">os模块文件操作函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件压缩"><span class="toc-number">1.2.</span> <span class="toc-text">文件压缩</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
