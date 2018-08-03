@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>总结 | 梦语人生</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="函数的优越性：    提高软件的开发效率    提高软件的可维护性    提高程序的重用性">
-<meta name="keywords" content="函数">
+  <meta name="description" content="文件操作">
+<meta name="keywords" content="文件操作">
 <meta property="og:type" content="article">
 <meta property="og:title" content="总结">
-<meta property="og:url" content="http://yoursite.com/2018/07/23/7.9总结/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/8.1/index.html">
 <meta property="og:site_name" content="梦语人生">
-<meta property="og:description" content="函数的优越性：    提高软件的开发效率    提高软件的可维护性    提高程序的重用性">
+<meta property="og:description" content="文件操作">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T13:07:47.383Z">
+<meta property="og:updated_time" content="2018-08-03T11:21:20.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="总结">
-<meta name="twitter:description" content="函数的优越性：    提高软件的开发效率    提高软件的可维护性    提高程序的重用性">
+<meta name="twitter:description" content="文件操作">
   
     <link rel="alternative" href="/atom.xml" title="梦语人生" type="application/atom+xml">
   
@@ -161,7 +161,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-7.9总结" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-8.1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -173,24 +173,24 @@
   
 
         
-        <a href="/2018/07/23/7.9总结/" class="archive-article-date">
-  	<time datetime="2018-07-23T13:09:30.994Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-23</time>
+        <a href="/2018/08/03/8.1/" class="archive-article-date">
+  	<time datetime="2018-08-03T11:22:30.542Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>函数的优越性：<br>    提高软件的开发效率<br>    提高软件的可维护性<br>    提高程序的重用性<br><a id="more"></a></p>
-<h2 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h2><h3 id="自定义函数语法格式"><a href="#自定义函数语法格式" class="headerlink" title="自定义函数语法格式"></a>自定义函数语法格式</h3><p>def  函数名称（[参数1 ,参数2=默认值 ,…]）:<br>    程序内容叙述(也叫函数体)<br>    [return value]     //return语句将终止函数的执行<br>   定义函数时的参数称为形参，调用时写的参数称为实参，调用函数时，传入的两个值按照位置顺序依次赋给形参。<br>   函数参数和返回值不是必须的，如果没有return语句，则Python函数默认返回值为None 。<br>   返回值：return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。    在此情况下使用实参值覆盖原有形参的默认值，本质上就是变量的重新复制操作 </p>
-<h3 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h3><p>可变参数又称为不定长参数。在python函数中，还可以定义可变参数。顾名思义，可变参数就是传入的参数个数是可变的，可以是1个、2个或者任意多个，也可以是0个，当不确定参数个数时，通常需要用到不定长参数 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def calc(number): 	</span><br><span class="line">    sum = 0 	</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> number: 		</span><br><span class="line">        sum = sum + n*n 	</span><br><span class="line">    <span class="built_in">return</span> sum </span><br><span class="line">    &gt;&gt;&gt; calc([1,2,3]) </span><br><span class="line">    14 </span><br><span class="line">def person(name, age):     </span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"name = %s age = %d"</span> %   (name, age)) </span><br><span class="line">    person(age=20, name=<span class="string">"Mary"</span>) </span><br><span class="line">    <span class="comment">#这里调用函数时，明确指明了age参数的值为20，name参数的值为Mary </span></span><br><span class="line">    <span class="comment">#输出name = Mary age = 20</span></span><br></pre></td></tr></table></figure>
-<h3 id="缺省参数"><a href="#缺省参数" class="headerlink" title="缺省参数"></a>缺省参数</h3><p>调用函数时，缺省参数的值如果没有传入，则被认为是默认值。下例会打印默认的age，如果age没有被传入： </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def printinfo( name, age = 35 ):    <span class="string">"打印任何传入的字符串"</span>    </span><br><span class="line">    <span class="built_in">print</span> <span class="string">"Name: "</span>, name;    </span><br><span class="line">    <span class="built_in">print</span> <span class="string">"Age "</span>, age;    </span><br><span class="line">    <span class="built_in">return</span>;   <span class="comment">#调用printinfo函数 </span></span><br><span class="line">printinfo( age=50, name=<span class="string">"miki"</span> ); </span><br><span class="line">printinfo( name=<span class="string">"miki"</span> );</span><br></pre></td></tr></table></figure>
-<h3 id="python的星号（-）和双星号（-）用法"><a href="#python的星号（-）和双星号（-）用法" class="headerlink" title="python的星号（*）和双星号（**）用法"></a>python的星号（*）和双星号（**）用法</h3><ul>
-<li>该位置接受任意多个非关键字（non-keyword）参数，在函数中将其转化为元组（1,2,3,4）       <strong>该位置接受任意多个关键字（keyword）参数，在函数</strong>位置上转化为词典 [key:value, key:value ] <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def person(name, age, **kw): 	</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'name:'</span>, name, <span class="string">'age:'</span>, age, <span class="string">'other:'</span>, kw) </span><br><span class="line">&gt;&gt;&gt; person(<span class="string">'Michael'</span>, 30) </span><br><span class="line">name: Michael age: 30 other: &#123;&#125;  </span><br><span class="line">&gt;&gt;&gt; person(<span class="string">'Bob'</span>, 35, city=<span class="string">'Chongqing'</span>) </span><br><span class="line">name: Bob age: 35 other: &#123;<span class="string">'city'</span>: <span class="string">'Chongqing'</span>&#125; </span><br><span class="line">&gt;&gt;&gt; person(<span class="string">'Adam'</span>, 45, gender=<span class="string">'M'</span>, job=<span class="string">'Engineer'</span>)</span><br><span class="line"> name: Adam age: 45 other: &#123;<span class="string">'gender'</span>: <span class="string">'M'</span>, <span class="string">'job'</span>: <span class="string">'Engineer'</span>&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+        <h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><a id="more"></a>
+<h3 id="文件的打开或创建"><a href="#文件的打开或创建" class="headerlink" title="文件的打开或创建"></a>文件的打开或创建</h3><p>语法<br>    文件变量名=open(文件名[, 打开方式[, 缓冲区]])</p>
+<p>注意事项：<br>在GBK编码中，1个汉字占2个字符。<br>在UTF-8编码中，1个汉字占3个字符。<br>在Unicode编码中，1个汉字占1个字符<br>在GB2312编码中，1个汉字（符号）占2个字符。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">函数	描述</span><br><span class="line">w	打开一个文件只用于写入。如果该文件已存在则打开文件，并从开头开始编辑，即原有内容会被删除。如果该文件不存在，创建新文件。</span><br><span class="line">r	以只读方式打开文件。文件的指针将会放在文件的开头。这是默认模式。</span><br><span class="line">a	打开一个文件用于追加。如果该文件已存在，文件指针将会放在文件的结尾。也就是说，新的内容将会被写入到已有内容之后。如果该文件不存在，创建新文件进行写入</span><br><span class="line">x	抑或模式（xor），文件存在则报错，文件不存在则新建文件</span><br><span class="line">b	二进制模式（binary），以二进制模式打开一个文件用于只读，辅助模式不能单独使用</span><br><span class="line">+	增强模式（plus），也是辅助模式不能单独使用</span><br></pre></td></tr></table></figure>
+<p>w,w+,wb,wb+,r,r+,rb,rb+,a,a+,ab,ab+,x,x+,xb,xb+</p>
+<h3 id="文件的写入-二进制"><a href="#文件的写入-二进制" class="headerlink" title="文件的写入-二进制"></a>文件的写入-二进制</h3><p>以下两种方法可以进行二进制文件的写入。<br> 一种是通过struct模块的pack()方法把数字和布尔值转换成字节串（以字节为单位的字符串），然后用write()方法写入二进制文件中，字符串则可直接写入二进制文件中。    pack()方法的语法是：pack（格式串，数字对象表）。<br> 另外一种是用pickle模块的dump()方法直接把对象转换为字节串（bytes）并存入文件中。</p>
+<p>通过struct模块进行二进制文件的写入/读取</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#file3.py</span></span><br><span class="line"><span class="comment">#coding=UTF-8</span></span><br><span class="line">import struct</span><br><span class="line">n=102400000</span><br><span class="line">x=10.24</span><br><span class="line">b=True</span><br><span class="line">s=<span class="string">'我是谁，我在哪，我在干什么？'</span></span><br><span class="line">sn=struct.pack(<span class="string">'if?'</span>, n, x, b)  </span><br><span class="line"><span class="comment">#把整数n、浮点数x、布尔对象b依次转换为字节串</span></span><br><span class="line">f=open(<span class="string">'file3.dat'</span>,<span class="string">'wb'</span>)</span><br><span class="line">f.write(sn) 	<span class="comment">#写入字节串</span></span><br><span class="line">f.write(s) 	<span class="comment">#字符串可直接写入</span></span><br><span class="line">f.close()</span><br><span class="line"><span class="comment">#file4.py</span></span><br><span class="line"><span class="comment">#coding=UTF-8</span></span><br><span class="line">import pickle</span><br><span class="line">f=open(<span class="string">'file4.dat'</span>,<span class="string">'wb'</span>)</span><br><span class="line">n=7</span><br><span class="line">i=102400000</span><br><span class="line">a=10.24</span><br><span class="line">s=<span class="string">'人人都爱雷蒙德123abc'</span></span><br><span class="line">lst=[[1,2,3],[4,5,6J,[7,8,9]]</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Exp7_10.py</span></span><br><span class="line">import struct</span><br><span class="line">f=open(<span class="string">'F7_4.dat'</span>,<span class="string">'rb'</span>)</span><br><span class="line">sn=f.read(9)</span><br><span class="line">tu=struct.unpack(<span class="string">'if?'</span>,sn) </span><br><span class="line"><span class="comment">#从字节串sn中还原出1个整数、1个浮点数和1个布尔值，并返回元组。</span></span><br><span class="line"><span class="built_in">print</span>(tu)</span><br><span class="line">n=tu[0]</span><br><span class="line">x=tu[1]</span><br><span class="line">bl=tu[2]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'n='</span>,n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'x='</span>,x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'bl='</span>,bl)</span><br><span class="line">s=f.read(9)</span><br><span class="line">f.close()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">'s='</span>,s)</span><br><span class="line"></span><br><span class="line">程序运行结果</span><br><span class="line"></span><br><span class="line"> (102400000,10.239999771118164,True)</span><br><span class="line">n=102400000</span><br><span class="line">x=10.239999771118164</span><br><span class="line">bl=True</span><br><span class="line">s=‘你好，我是hhp<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">``` </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">通过pickle模块进行二进制文件的写入/读取</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">``` bash</span></span><br><span class="line"><span class="string">tu=(-5,10,8)</span></span><br><span class="line"><span class="string">coll=&#123;4,5,6&#125;</span></span><br><span class="line"><span class="string">dic=&#123;'</span>a<span class="string">':'</span>apple<span class="string">','</span>b<span class="string">':'</span>banana<span class="string">','</span>g<span class="string">':'</span>grape<span class="string">','</span>o<span class="string">':'</span>orange<span class="string">'&#125;</span></span><br><span class="line"><span class="string">try:</span></span><br><span class="line"><span class="string">pickle.dump(n,f) #表示后面将要写入的数据个数</span></span><br><span class="line"><span class="string">pickle.dump(i,f) #把整数i转换为字节串，并写入文件</span></span><br><span class="line"><span class="string">pickle.dump(a,f)</span></span><br><span class="line"><span class="string">pickle.dump(lst,f)</span></span><br><span class="line"><span class="string">pickle.dump(i,f)</span></span><br><span class="line"><span class="string">pickle.dump(a,f)</span></span><br><span class="line"><span class="string">pickle.dump(lst,f)</span></span><br><span class="line"><span class="string">pickle.dump(i,f)</span></span><br><span class="line"><span class="string">pickle.dump(tu,f)</span></span><br><span class="line"><span class="string">pickle.dump(coll,f)</span></span><br><span class="line"><span class="string">pickle.dump(dic,f)</span></span><br><span class="line"><span class="string">except：</span></span><br><span class="line"><span class="string">print('</span>写文件异常!<span class="string">')  #如果写文件异常则跳到此处执行</span></span><br><span class="line"><span class="string">f.close()</span></span><br><span class="line"><span class="string">``` </span></span><br><span class="line"><span class="string">读取</span></span><br><span class="line"><span class="string">``` bash</span></span><br><span class="line"><span class="string">#Exp7_11.py</span></span><br><span class="line"><span class="string">import pickle</span></span><br><span class="line"><span class="string">f=open('</span>F7_5.dat<span class="string">','</span>rb<span class="string">')</span></span><br><span class="line"><span class="string">n=pickle.load(f)  	#读取文件的数据</span></span><br><span class="line"><span class="string">i=0</span></span><br><span class="line"><span class="string">while i&lt;n:</span></span><br><span class="line"><span class="string">x=pickle.load(f)</span></span><br><span class="line"><span class="string">print(x)</span></span><br><span class="line"><span class="string">i=i+1</span></span><br><span class="line"><span class="string">f.close()</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">程序运行结果</span></span><br><span class="line"><span class="string">102400000</span></span><br><span class="line"><span class="string">10.24                        </span></span><br><span class="line"><span class="string">人人都爱雷蒙德123abc</span></span><br><span class="line"><span class="string">[1,2,3],[4,5,6J,[7,8,9]</span></span><br><span class="line"><span class="string">(-5,10,8)</span></span><br><span class="line"><span class="string">set([4,5,6])</span></span><br><span class="line"><span class="string">&#123;'</span>a<span class="string">':'</span>apple<span class="string">','</span>b<span class="string">':'</span>banana<span class="string">','</span>g<span class="string">':'</span>grape<span class="string">','</span>o<span class="string">':'</span>orange<span class="string">'&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="指针的移动"><a href="#指针的移动" class="headerlink" title="指针的移动"></a>指针的移动</h3><p>文件指针<br>写入文件后，必须打开才能读取写入的内容。<br>读取文件后，无法再次读取读过的内容。<br>seek(n) ，其中n&gt;=0，seek(0)表示文件指针移到文件头；n&gt;0时，表示移动到文件头之后的位置，从任意位置读取内容时或从任意位置覆盖内容时需要这样做。<br>seek(0,2)表示把文件指针移到文件尾，在追加新内容时需要这样做(指定指针参考点方式目前不能使用)<br>tell()指针定位，获取指针的当前位置</p>
 
       
 
@@ -225,7 +225,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">函数</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">文件操作</a>
         		</li>
       		
 		</ul>
@@ -281,7 +281,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/23/7.9总结/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/03/8.1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -295,18 +295,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/24/7.24/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          总结
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/07/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2018/07/26/7.26/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">总结</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -333,7 +324,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的定义"><span class="toc-number">1.</span> <span class="toc-text">函数的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义函数语法格式"><span class="toc-number">1.1.</span> <span class="toc-text">自定义函数语法格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可变参数"><span class="toc-number">1.2.</span> <span class="toc-text">可变参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#缺省参数"><span class="toc-number">1.3.</span> <span class="toc-text">缺省参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#python的星号（-）和双星号（-）用法"><span class="toc-number">1.4.</span> <span class="toc-text">python的星号（*）和双星号（**）用法</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文件操作"><span class="toc-number">1.</span> <span class="toc-text">文件操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文件的打开或创建"><span class="toc-number">1.1.</span> <span class="toc-text">文件的打开或创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件的写入-二进制"><span class="toc-number">1.2.</span> <span class="toc-text">文件的写入-二进制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#指针的移动"><span class="toc-number">1.3.</span> <span class="toc-text">指针的移动</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
